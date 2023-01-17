@@ -9,5 +9,36 @@
 </head>
 <body>
     <h2>Shoe Shop</h2>
+
+    <div id="addedShoe">
+        <img width="50" >
+        <h4></h4>
+        <div></div>
+    </div>
+
+    <form action="" onsubmit="formSubmitEvent(event)">
+
+        <div style="padding: 10px;">
+            <label for="">Shoe Name</label>
+            <input type="text" name="shoeName">
+        </div>
+
+        <div style="padding: 10px;">
+            <label for="">Number</label>
+            <input type="number" name="shoeNumber">
+        </div style="padding: 10px;">
+
+        <div style="padding: 10px;">
+            <div id="shoePreview"></div>
+            <label for="">Upload Image File</label>
+            <input type="file" name="shoeImage" onchange="handleFileSelect(event)">
+        </div>
+
+        <div>
+            <button>Save shoe</button>
+        </div>
+
+    </form>
+
 </body>
 </html>
